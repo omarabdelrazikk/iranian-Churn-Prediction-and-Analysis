@@ -1,16 +1,36 @@
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Predict</button>
-</form>
+{% load static %}
 
-{% if regression_result %}
-    <h2>Predicted Customer Value: {{ regression_result }}</h2>
-    <h2>Churn Status: {% if classification_result %}
-        Churned
-    {% else %}
-        not churned
-    {% endif %}
-    </h2>
-{% endif %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Churn Prediction</title>
+    <!-- Link the external CSS file -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Churn Prediction</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if regression_result %}
+        <div class="result">
+            <h2>Predicted Customer Value: {{ regression_result |floatformat:2  }}</h2>
+            <h2>Churn Status: 
+                {% if classification_result %}
+                    <span class="churned">Churned</span>
+                {% else %}
+                    <span class="not-churned">Not Churned</span>
+                {% endif %}
+            </h2>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

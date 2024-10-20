@@ -1,0 +1,16 @@
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Predict</button>
+</form>
+
+{% if regression_result %}
+    <h2>Predicted Customer Value: {{ regression_result }}</h2>
+    <h2>Churn Status: {% if classification_result %}
+        Churned
+    {% else %}
+        not churned
+    {% endif %}
+    </h2>
+{% endif %}
+
