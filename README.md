@@ -1,7 +1,7 @@
 # Iranian Churn Prediction and Analysis
 
 ## Overview
-This project analyzes customer churn data from an Iranian telecom company over 12 months to identify key churn factors and develop predictive models.
+This project analyzes customer churn data from an Iranian telecom company over 12 months to identify key churn factors and develop predictive models With a web UI which you can enter the different features values and see if your telecom customers might churn or not.
 
 ## Project Structure
 - **Data Analysis**: Data preprocessing, exploratory analysis, and feature engineering.
