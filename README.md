@@ -10,10 +10,10 @@ This project analyzes customer churn data from an Iranian telecom company over 1
 
 ## Setup
 1. Clone this repository.
-2- Go to the different directories.
-3- Run analyses in the provided Jupyter notebooks.
+2. Go to the different directories.
+3. Run analyses in the provided Jupyter notebooks.
 
 ## Contributors
-- [Muhammad Ibrahim][https://github.com/Muhammadibra40]
-- [Mina Micheal][https://github.com/minammfa]
-- [Omar Abdel Razikk][https://github.com/omarabdelrazikk]
+- [Muhammad Ibrahim](https://github.com/Muhammadibra40)
+- [Mina Micheal](https://github.com/minammfa)
+- [Omar Abdel Razikk](https://github.com/omarabdelrazikk)
