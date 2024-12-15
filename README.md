@@ -17,3 +17,4 @@ This project analyzes customer churn data from an Iranian telecom company over 1
 - [Muhammad Ibrahim](https://github.com/Muhammadibra40)
 - [Mina Micheal](https://github.com/minammfa)
 - [Omar Abdel Razikk](https://github.com/omarabdelrazikk)
+- [Sarah Ayman](https://github.com/Sarahaymam).
